@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Patterns Shop</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    {{{body}}}
+<script>
+// SESSION STORAGE --where do I place this information? in app.js?
+  function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+      if (sessionStorage.clickcount) {
+        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+      } else {
+        sessionStorage.clickcount = 1;
+      }
+      if (document.getElementById("result")) {
+        document.getElementById("result").innerHTML = "You have shopped " + sessionStorage.clickcount + " dark patterns during your shopping spree.";
+      }
+
+    } else {
+      if (document.getElementById("results")) {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+    }
+  }
+</script>
+</body>
+</html>

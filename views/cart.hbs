@@ -1,0 +1,65 @@
+<div id= "home" class="container">
+  <div id= "home" class="box">
+    <h1>Dark <b style="color: yellow;" id="">Patterns</b> Shop</h1>
+    <h3>These are the items in your cart:</h3>
+  </div>
+
+    {{!-- <p id="currentcart"></p> --}}
+
+    <ul id="currentcart">
+
+    </ul>
+
+    <h3>Surcharges: $15.00</h3>
+    <button onclick="clickCounter()" id="myBtn" class="button">Checkout</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div id= "cs" class="container">
+          <div id= "cs" class="box">
+            <h2>Enter your email + save!</h2>
+            <h1>20% off this order!</h1>
+
+              <form id="email">
+                <input type="text" id="email" name="email" placeholder="Enter your email address"><br>
+              </form>
+
+            <a href= "/finish">
+              <button onclick="clickCounter()" id= "choice" class="button">Get my 20%!</button>>
+            </a>
+            <a onclick="clickCounter()" href= "/finish">
+                <p>No thanks, I don't like saving money.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+  var modal = document.getElementById("myModal");
+
+  var btn = document.getElementById("myBtn");
+
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  function createCartList() {
+    var ul = document.getElementById("currentcart");
+
+    let parsedCart = JSON.parse(sessionStorage.cart);
+    console.log(parsedCart);
+
+    for (let item of parsedCart) {
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(item));
+      ul.appendChild(li);
+    }
+  }
+  window.onload = createCartList;
+
+</script>

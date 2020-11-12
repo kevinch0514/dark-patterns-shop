@@ -1,0 +1,54 @@
+<nav role="navigation" class="nav-menu w-nav-menu">
+  <a href="/" class="nav-menu link w-nav-link">Home</a>
+  <a href="/store" class="nav-menu link w-nav-link w--current">Store</a>
+  <a href="/resources" class="nav-menu link w-nav-link">Resources</a>
+  <a href="/aboutus" class="nav-menu link w-nav-link">About Us</a>
+</nav>
+<div id= "home" class="container">
+  <div id= "home" class="box">
+    <h1>Dark <b style="color: yellow;">Patterns</b> Shop</h1>
+    <h3>Once you enter, you can't back out</h3>
+  </div>
+  <button onclick="clickCounter()" id="myBtn" class="button">Start Shopping</button>
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id= "fc" class="container">
+        <div id= "fc" class="box">
+          <h1>Subscribe to Dark Patterns Shop</h1>
+          <h2>Start free 30-day trial</h2>
+          <a href= "/store">
+            <button onclick="clickCounter()" id= "choice" class="button">Continue with Paypal or Amazon or Venmo</button>>
+          </a>
+          <div id= "conditions" class="box">
+            <p>$19.99 per month after 30 days. Cancel anytime. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var modal = document.getElementById("myModal");
+
+  var btn = document.getElementById("myBtn");
+
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal but how do I make it transition to the page?
+  span.onclick = function() {
+    modal.style.display = "none";
+    window.location.assign("/store");
+  }
+
+</script>

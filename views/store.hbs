@@ -1,0 +1,140 @@
+<h1>Dark <b style="color: yellow;" id="">Patterns</b> Shop</h1>
+
+<div class="grid-container">
+
+  <div class="item1">
+    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp13touch-silver-select-202005?wid=892&hei=820&&qlt=80&.v=1587459986844" height="250px" width="250px">
+    <p>MacBook Pro</p>
+    <button onclick="addToCart('MacBook Pro')" class="button" id="storeitem1">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+  <div class="item2">
+    <img src="https://cdn.shopify.com/s/files/1/1104/4168/products/Allbirds_TR_RN_SF_PDP_Chalk_BTY_900x900.png?v=1600886861 " height="250px" width="250px">
+    <p>Allbirds Tree Runners | Chalk White</p>
+    <button onclick="addToCart('Allbirds Tree Runners | Chalk White')" class="button" id="storeitem2">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+  <div class="item3">
+    <img src="https://mms-images-prod.imgix.net/mms/images/catalog/3a52bc974e22dab11435fb6241b11ce7/styles/175800/catalog_detail_image_large.jpg?ixlib=rails-2.1.4&w=700&h=700&fit=fill&bg=ffffff&dpr=1&q=60&fm=pjpg&auto=compress&trim=auto&trimmd=0" height="250px" width="250px">
+    <p>Comfort Colors T-Shirts | 2-pack</p>
+    <button onclick="addToCart('Comfort Colors T-Shirts | 2-pack')" class="button" id="storeitem3">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+  <div class="item4">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/71Uqr9W6NfL._SL1500_.jpg " height="250px" width="250px">
+    <p>Altoids</p>
+    <button onclick="addToCart('Altoids')" class="button" id="storeitem4">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+  <div class="item5">
+    <img src="https://m.media-amazon.com/images/I/816fJgSWWaL.jpg " height="250px" width="250px">
+    <p>Rocketbook Flip w/ Capsule</p>
+    <button onclick="addToCart('Rocketbook Flip w/ Capsule')" class="button" id="storeitem5">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+  <div class="item6">
+    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/6/17/2/FNM080109Cover021_pink_s4x3.jpg.rend.hgtvcom.616.462.suffix/1383254816256.jpeg" height="250px" width="250px">
+    <p>Baked Alaska</p>
+    <button onclick="addToCart('Baked Alaska')" class="button" id="storeitem6">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+  <div class="item7">
+    <img src="https://target.scene7.com/is/image/Target/GUEST_9955344a-1748-4651-b92f-7c71a1c93c9b?wid=488&hei=488&fmt=pjpeg" height="250px" width="250px">
+    <p>Strider</p>
+    <button onclick="addToCart('Strider')" class="button" id="storeitem7">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+  <div class="item8">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/61LmZV+B+UL._SX384_BO1,204,203,200_.jpg" height="250px" width="250px">
+    <p>Coloring Book</p>
+    <button onclick="addToCart('Coloring Book')" class="button" id="storeitem8">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+  <div class="item9">
+    <img src="https://cdn10.bigcommerce.com/s-p10g1rn/products/3138/images/6884/Gojo_Purell_Advanced_Instant_Hand_Sanitizer_2_oz_Bottle_Personal_Gear_Retractable_Clip_9605_24__43034.1583339691.1280.1280.jpg?c=2" height="250px" width="250px">
+    <p>Handsanitizer</p>
+    <button onclick="addToCart('Handsanitizer')" class="button" id="storeitem9">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+  <div class="item10">
+    <img src="https://i5.walmartimages.com/asr/d3d9329c-bcbd-4bd4-b6ae-d75242c7997f_1.f33250897693450d0fddf3674dca1774.jpeg" height="250px" width="250px">
+    <p>Clorox Wipes</p>
+    <button onclick="addToCart('Clorox Wipes')" class="button" id="storeitem10">
+      <i class="fa fa-shopping-cart"></i> Add to cart
+    </button>
+  </div>
+
+</div>
+
+<a href="/cart" class="link" id="cart"><button class="button" id="cartbutton">Proceed to Checkout <i class="fa fa-shopping-cart"></i></button></a>
+
+<script>
+  let btn1 = document.querySelector('#storeitem1');
+  let btn2 = document.querySelector('#storeitem2');
+  let btn3 = document.querySelector('#storeitem3');
+  let btn4 = document.querySelector('#storeitem4');
+  let btn5 = document.querySelector('#storeitem5');
+  let btn6 = document.querySelector('#storeitem6');
+  let btn7 = document.querySelector('#storeitem7');
+  let btn8 = document.querySelector('#storeitem8');
+  let btn9 = document.querySelector('#storeitem9');
+  let btn10 = document.querySelector('#storeitem10');
+
+  btn1.addEventListener('click', () => btn1.style.backgroundColor='#7CFC00')
+  btn2.addEventListener('click', () => btn2.style.backgroundColor='#7CFC00')
+  btn3.addEventListener('click', () => btn3.style.backgroundColor='#7CFC00')
+  btn4.addEventListener('click', () => btn4.style.backgroundColor='#7CFC00')
+  btn5.addEventListener('click', () => btn5.style.backgroundColor='#7CFC00')
+  btn6.addEventListener('click', () => btn6.style.backgroundColor='#7CFC00')
+  btn7.addEventListener('click', () => btn7.style.backgroundColor='#7CFC00')
+  btn8.addEventListener('click', () => btn8.style.backgroundColor='#7CFC00')
+  btn9.addEventListener('click', () => btn9.style.backgroundColor='#7CFC00')
+  btn10.addEventListener('click', () => btn10.style.backgroundColor='#7CFC00')
+
+  {{!-- btn1.addEventListener('click', () => btn1.innerText = "Added to cart";)
+  btn2.addEventListener('click', () => btn2.innerHTML = "Added to cart";)
+  btn3.addEventListener('click', () => btn3.innerHTML = "Added to cart";)
+  btn4.addEventListener('click', () => btn4.innerHTML = "Added to cart";)
+  btn5.addEventListener('click', () => btn5.innerHTML = "Added to cart";)
+  btn6.addEventListener('click', () => btn6.innerHTML = "Added to cart";)
+  btn7.addEventListener('click', () => btn7.innerHTML = "Added to cart";)
+  btn8.addEventListener('click', () => btn8.innerHTML = "Added to cart";)
+  btn9.addEventListener('click', () => btn9.innerHTML = "Added to cart";)
+  btn10.addEventListener('click', () => btn10.innerHTML = "Added to cart";) --}}
+
+
+  function addToCart(itemtitle) {
+    clickCounter();
+    console.log(itemtitle);
+    let existingCart = [];
+    let cart = itemtitle
+
+    if (sessionStorage.cart) {
+      existingCart = JSON.parse(sessionStorage.cart);
+      console.log(existingCart);
+      existingCart.push(cart);
+      console.log(existingCart);
+    } else {
+      existingCart.push(cart);
+    }
+    sessionStorage.cart = JSON.stringify(existingCart);
+  }
+</script>
