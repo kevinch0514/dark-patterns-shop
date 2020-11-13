@@ -1,87 +1,83 @@
 <nav role="navigation" class="nav-menu w-nav-menu">
   <a href="/" class="nav-menu link w-nav-link">Home</a>
-  <a href="/store" class="nav-menu link w-nav-link w--current">Store</a>
   <a href="/resources" class="nav-menu link w-nav-link">Resources</a>
   <a href="/aboutus" class="nav-menu link w-nav-link">About Us</a>
 </nav>
 <h1>Dark <b style="color: yellow;">Patterns</b> Shop</h1>
 
 <h2 id="result"></h2>
-
 <h3>This site was created for educational purposes on the subject of dark patterns.</h3>
 <h3>Dark Patterns are deceptive UI/UX interactions that manipulate you into doing something you don't want to do.</h3>
-<h3>While you didn't shop for actual items, you shopped some knowledge.</h3>
-<h3>Hopefully, if you are an UI/UX designer, you understood more about Dark Patterns and will avoid them during your design process.</h3>
-<h3>Hopefully, you, as a consumer became more informed about how your consumer decisions and security are affected by dark patterns.</h3>
-<h3>To learn more about the inspiration for this project go to <a href="/aboutus">About Us</a></h3>
-<h3>To learn more about dark patterns go to <a href="/resources">Resources</a>.</h3>
+<h3>If you are an UI/UX designer, now you understand more about the ethical problems of dark patterns.</h3>
+<h3>If you are a consumer, stay informed about how your consumer decisions and security are affected by dark patterns.</h3>
+<br>
 
 <h2>The Dark Patterns Shop included the following Dark Patterns:</h2>
 
 <div id="resultpage" class="grid-container">
 
   <div class="darkpattern">
-    <h3>Forced Continuity</h3>
+    <h2 style="color: yellow;">Forced Continuity</h2>
     <h4>
       Forced Continuity is a UI/UX design feature that subscribes you to a service for a free trial
       and automatically charges you after the trial ends if you don't remember to cancel.
       The terms and conditions are made deliberately small or long to read so you glance over them.
     </h4>
-    <h4>
+    <h4 style="color: white;">
       In this case, if you selected to "Continue with Paypal or Amazon or Venmo, you will be charged for "$19.99 per month after 30 days."
     </h4>
   </div>
 
   <div class="darkpattern">
-    <h3>Privacy Zuckering</h3>
+    <h2 style="color: yellow;">Privacy Zuckering</h2>
     <h4>
       Privacy Zuckering is a UI/UX design feature that tricks you into offering more personal information.
     </h4>
-    <h4>
+    <h4 style="color: white;">
       In this case, asking for your email address if you wanted to save 20%.
     </h4>
   </div>
 
   <div class="darkpattern">
-    <h3>Confirmshaming</h3>
+    <h2 style="color: yellow;">Confirmshaming</h2>
     <h4>
       Confirmshaming is a UI/UX design feature that insults you for not opting into a service.
     </h4>
-    <h4>
+    <h4 style="color: white;">
       In this case, you were insulted at the savings popup when if selected "No thanks, I don't like saving money.".
     </h4>
   </div>
 
   <div class="darkpattern">
-    <h3>Price Comparison Prevention</h3>
+    <h2 style="color: yellow;">Price Comparison Prevention</h2>
     <h4>
       Price Comparison Prevention is a UI/UX design feature that makes it difficult to determine the prices of products, thereby making it hard to make informed decisions.
     </h4>
-    <h4>
+    <h4 style="color: white;">
       In this case, you were offered an array of products to buy with no price tags.
     </h4>
   </div>
 
   <div class="darkpattern">
-    <h3>Hidden Costs</h3>
+    <h2 style="color: yellow;">Hidden Costs</h2>
     <h4>
       Hidden Costs is a UI/UX design feature that exploits the checkout phase by adding unexpected charges such as delivery charges, tax, etc.
       This may also exploit a cognitive bias called sunk-cost fallacy,
       which is the tendency to follow through an endeavor even if the costs outweigh the benefits
       because one has already invested time, money, or energy into it.
     </h4>
-    <h4>
-      In this case, proceeding with the checkout even with the surchages.
+    <h4 style="color: white;">
+      In this case, proceeding with the checkout with an "Shipping & Taxes: $15.00" fee.
     </h4>
   </div>
 
   <div class="darkpattern">
-    <h3>Roach Motel</h3>
+    <h2 style="color: yellow;">Roach Motel</h2>
     <h4>
       Roach Motel is a UI/UX design feature that makes getting into something easy, but getting out extremely difficult.
       This is often the case with subscriptions or memberships, where canceling either is a tedious process.
     </h4>
-    <h4>
+    <h4 style="color: white;">
       In this case, Dark Patterns Shop is a roach motel because getting started with shopping was easy, but getting out of the store meant going through the shopping process.
     </h4>
   </div>
@@ -89,7 +85,10 @@
 </div>
 
 <h2>Thanks for your purchase at Dark <b style="color: yellow;">Patterns</b> Shop!</h2>
+<h3>To learn more about the inspiration for this project go to <a id="nextsteps" class="links" href="/aboutus">About Us</a></h3>
+<h3>To learn more about dark patterns go to <a id="nextsteps" class="links" href="/resources">Resources</a></h3>
+<h3>To shop again close and open a new tab.</h3>
 
 <script>
-  document.getElementById("result").innerHTML = "You have shopped " + sessionStorage.clickcount + " dark patterns during your shopping spree.";
+  document.getElementById("result").innerHTML = "You fell for " + sessionStorage.clickcount + " dark patterns during your shopping spree.";
 </script>
